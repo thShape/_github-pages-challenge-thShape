@@ -76,9 +76,9 @@
   
   if (ResimSaati >= 00 && ResimSaati <= 06) document.write("<div id='background' style='background-image: url(gece.webp);'></div>");
   
-  else if (ResimSaati >= 06 && ResimSaati <= 09) document.write("<div id='background' style='background-image: url(sabahkörü.webp);'></div>");
+  else if (ResimSaati >= 06 && ResimSaati <= 16) document.write("<div id='background' style='background-image: url(sabahkörü.webp);'></div>");
   
-  else if (ResimSaati >= 09 && ResimSaati <= 18) document.write("<div id='background' style='background-image: url(ilkindi.webp);'></div>");
+  else if (ResimSaati >= 16 && ResimSaati <= 18) document.write("<div id='background' style='background-image: url(ilkindi.webp);'></div>");
   
   else if (ResimSaati >= 18 && ResimSaati <= 23) document.write("<div id='background' style='background-image: url(gece.webp);'></div>");
 
@@ -93,9 +93,9 @@
   
   if (GunMesaji >= 00 && GunMesaji <= 06) document.getElementById("basyazi").innerHTML = "İyi Geceler";
   
-  else if (GunMesaji >= 06 && GunMesaji <= 09) document.getElementById("basyazi").innerHTML = "Günaydın";
+  else if (GunMesaji >= 06 && GunMesaji <= 16) document.getElementById("basyazi").innerHTML = "Günaydın";
   
-  else if (GunMesaji >= 09 && GunMesaji <= 18) document.getElementById("basyazi").innerHTML = "Tünaydın";
+  else if (GunMesaji >= 16 && GunMesaji <= 18) document.getElementById("basyazi").innerHTML = "Tünaydın";
   
   else if (GunMesaji >= 18 && GunMesaji <= 23) document.getElementById("basyazi").innerHTML = "İyi Akşamlar";
 
