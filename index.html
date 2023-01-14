@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Anasayfa</title>
+</head>
+<body>
+  <div id="background"></div>
+
+  <center>
+
+    <div class="ust"> 
+
+      <div class="ustyazi" >
+          <a href="">Anasayfa</a>
+          <a href="">Projeler</a>
+          <a href="">İçerik</a>
+          <a href="">Duyuru</a>
+          <a href="">Hakkımda</a>
+      </div>
+
+      <div class="logo">
+        <img src="logo.png" alt=""  height="55px">
+       </div>
+    </div>
+
+    <div class="zaman-yazi">
+        <div class="leftcontent">
+            <h1 id="basyazi">İyi Günler</h1>
+
+            <hr>
+            <br>
+
+            <div id="zaman"></div>
+
+            <br>
+            <hr>
+
+            <div class="shortcont">
+
+              <div class="scbaslik">
+                <h3>İlginizi Çekebilir</h3>
+              </div>
+              
+              <div class="sccontent">
+
+                <div class="sccontyazi1">
+                  <a href="">Ezio Grafik Projesi</a> 
+                </div>
+
+                <div class="sccontresim1">
+                  <img src="ezio.webp" alt=""></a>
+                </div>
+
+              </div>
+
+            </div>
+
+        </div>
+   
+    </div>
+
+  </center>
+
+  
+</body>
+
+<!--
+<script>
+
+  var ResimTarihi = new Date();
+  var ResimSaati = ResimTarihi.getHours();
+  
+  if (ResimSaati >= 00 && ResimSaati <= 06) document.write("<div id='background' style='background-image: url(gece.webp);'></div>");
+  
+  else if (ResimSaati >= 06 && ResimSaati <= 09) document.write("<div id='background' style='background-image: url(sabahkörü.webp);'></div>");
+  
+  else if (ResimSaati >= 09 && ResimSaati <= 18) document.write("<div id='background' style='background-image: url(ilkindi.webp);'></div>");
+  
+  else if (ResimSaati >= 18 && ResimSaati <= 23) document.write("<div id='background' style='background-image: url(gece.webp);'></div>");
+
+  </script>
+-->
+
+
+<script>
+
+  var GunMesaji = new Date();
+  var GunMesaji = GunMesaji.getHours();
+  
+  if (GunMesaji >= 00 && GunMesaji <= 06) document.getElementById("basyazi").innerHTML = "İyi Geceler";
+  
+  else if (GunMesaji >= 06 && GunMesaji <= 09) document.getElementById("basyazi").innerHTML = "Günaydın";
+  
+  else if (GunMesaji >= 09 && GunMesaji <= 18) document.getElementById("basyazi").innerHTML = "Tünaydın";
+  
+  else if (GunMesaji >= 18 && GunMesaji <= 23) document.getElementById("basyazi").innerHTML = "İyi Akşamlar";
+
+  </script>
+
+<script>
+  function tarihSaat() {
+      var date = new Date().toLocaleString('tr-TR');
+      document.getElementById("zaman").innerHTML = date;
+  }
+
+  setInterval(tarihSaat, 1000); 
+  </script> 
+</html>
