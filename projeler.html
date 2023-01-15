@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Proje Kategorisi</title>
+</head>
+<body>
+  <div id="background"></div>
+
+  <center>
+
+    <div class="ust"> 
+
+      <div class="ustyazi" >
+          <a href="index.html">Anasayfa</a>
+          <a href="projeler.html">Projeler</a>
+          <a href="#">İçerik</a>
+          <a href="#">Duyuru</a>
+          <a href="#">Hakkımda</a>
+      </div>
+
+      <div class="logo">
+        <img src="logo.png" alt=""  height="55px">
+       </div>
+    </div>
+
+    <div class="projecontainer">
+        
+        <div class="okulprojeleri">
+            <img src="okulprojeleri.webp" alt="" > 
+            <a href=""> <h1> Okul Projelerim</h1> </a>
+            <h4> Okul İçin / Okulda Yaptığım Projeler.</h3>
+        </div>
+
+        <div class="şahsiprojeler">
+            <img src="şahsiprojeler.webp" alt="" > 
+            <a href=""> <h1> Şahsi Projelerim</h1> </a>
+            <h4> Okul Veya Herhangi Bir Kurumdan Bağımsız Hobi Olarak Yaptığım Projeler.</h3>
+        </div>
+
+    </div>
+
+  </center>
+
+</body>
+
+<script>
+
+  var ResimTarihi = new Date();
+  var ResimSaati = ResimTarihi.getHours();
+  
+  if (ResimSaati >= 00 && ResimSaati <= 06) document.write("<div id='background' style='background-image: url(gece.webp);'></div>");
+  
+  else if (ResimSaati >= 06 && ResimSaati <= 16) document.write("<div id='background' style='background-image: url(sabahkörü.webp);'></div>");
+  
+  else if (ResimSaati >= 16 && ResimSaati <= 18) document.write("<div id='background' style='background-image: url(ilkindi.webp);'></div>");
+  
+  else if (ResimSaati >= 18 && ResimSaati <= 23) document.write("<div id='background' style='background-image: url(gece.webp);'></div>");
+
+  </script>
+
+
+</html>
